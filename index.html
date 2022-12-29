@@ -7,26 +7,56 @@
     <title>Pokedex</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./pokedex.js" defer></script>
+     <link rel="icon" href="./images/pokeball.png"> <!--Esto es para poner el icono en l abarra de navegador -->
 </head>
 <body>
-    <div class="container">
-        <h1>Pokedex</h1>
-        <!-- Aqui creare un form que me valga como buscador, onsubmit sirrve para cuando le de a enter -->
-        <form action="" onsubmit="searchPokemon(event)">
-            <input type="text" name="pokemon" id="numberPokemons" placeholder="insert numbers Pokemons"  >
-            <img src="./pngegg.png" alt="search" id="searchNumberPokemon">
-            <input type="text" id="inputPokemon" placeholder="pokemon name or id" >
-            <img src="./pngegg.png" alt="search" id="search">
-            <img src="./delete.png" alt="delete" id="delete">
-            <button id="buttonDeleteAll">Delete All</button>
+    <header>
 
-        </form>
-        <div id="search-pokemon">
+        <nav id="myLinks">
 
-        </div>
-     
-        <ol id="pokedex"></ol>
+            <ul class="nav_list">
+                <a href="#"><li>POKEDEX</li></a>
+                <a href="#"><li>FIND YOUR POKEMON</li></a>
+                <a href="#"><li>GAMES</li></a>
+            </ul>
+        </nav>
+        <h1> <!--si nnos da algun  problema es por el h1 , que metimos el span-->
+           <span class="logo_Span">
+            <a href="#home" class="logo" title="Logo"> 
+                <img src="./images/pokemon-logo-8.png" alt="logo-pokemon">
+            </a>
+        </span> 
+        </h1>
         
-    </div>
+
+    </header>
+
+    <main>
+        <div class="container"> 
+        
+            <!-- Aqui creare un form que me valga como buscador, onsubmit sirrve para cuando le de a enter -->
+            <!-- <form action="" class="search_Bar" onsubmit="searchPokemon(event)"> La funcion searchpokemon ya no existe, probar a eliminarla a ver que hace -->
+                 <!-- <input type="text" name="pokemon" id="numberPokemons" placeholder="insert numbers Pokemons"  >   -->
+                <!-- <img src="./images/magnifyingglass.png" alt="search" id="searchNumberPokemon">  -->
+                <!-- <input type="text" id="inputPokemon" placeholder="pokemon name or id" >  -->
+                <!-- <img src="./images/magnifyingglass.png" alt="search" id="search"> -->
+              
+                
+            
+
+                <!-- <img src="./images/delete.png" alt="delete" id="delete">  -->
+                <!-- <button id="buttonDeleteAll">Delete All</button>  -->
+    
+            <!-- </form>  -->
+            <div id="search-pokemon"> 
+    
+            </div> 
+         
+            <ol id="pokedex"></ol> 
+            
+         </div>
+    </main>
+
+    
 </body>
-</html>
+</html> 
