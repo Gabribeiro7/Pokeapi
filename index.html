@@ -6,14 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style_Vintage.css">
     <script src="./pokedex.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Pokedex</h1>
-        <ol id="pokedex">
+    <header>
+
+        <nav id="myLinks">
             
-        </ol>
-    </div>
+            <ul class="nav_list">
+                <a href="./index.html"><li>POKEDEX</li></a>
+                <a href="./pokedexVintage.html"><li>FIND YOUR POKEMON</li></a>
+                <a href="./pokedexGames.html"><li>GAMES</li></a>
+            </ul>
+        </nav>
+        <span class="logo_Span">
+            <a href="#home" class="logo" title="Logo"> 
+                <img src="./Imagenes/PageIcons/pokemon-logo-8.png" alt="">
+            </a>
+        </span>
+
+    </header>
+    <main>
+        
+        <div class="container">
+            <form action=""  onsubmit="searchPokemn(event)" class="search_bar">
+                <input type="text" id="myInput" autocomplete="off" placeholder="Search for a Pokemon" name="Pokemon">
+            </form>
+            <div class="filter_Types">
+    
+                <img src="./Imagenes/Icons2/Bug_icon_SwSh.png" alt="icon type bug" class="bug"  title="Bug"/>
+                <img src="./Imagenes/Icons2/Dragon_icon_SwSh.png" alt="icon type dragon" class="dragon"  title="Dragon"/>
+                <img src="./Imagenes/Icons2/Electric_icon_SwSh.png" alt="icon type electric" class="electric"  title="Electric"/>
+                <img src="./Imagenes/Icons2/Fairy_icon_SwSh.png" alt="icon type fairy" class="fairy"  title="Fairy"/>
+                <img src="./Imagenes/Icons2/Fighting_icon_SwSh.png" alt="icon type fighter" class="fighting"  title="Fighter"/>
+                <img src="./Imagenes/Icons2/Fire_icon_SwSh.png" alt="icon type fire" class="fire"  title="Fire"/>
+                <img src="./Imagenes/Icons2/Flying_icon_SwSh.png" alt="icon type flying" class="flying"  title="Flying"/>
+                <img src="./Imagenes/Icons2/Ghost_icon_SwSh.png" alt="icon type ghost" class="ghost"  title="Ghost"/>
+                <img src="./Imagenes/Icons2/Grass_icon_SwSh.png" alt="icon type grass" class="grass"  title="Grass"/>
+                <img src="./Imagenes/Icons2/Ground_icon_SwSh.png" alt="icon type ground" class="ground"  title="Ground"/>
+                <img src="./Imagenes/Icons2/Ice_icon_SwSh.png" alt="icon type ice" class="ice"  title="Ice"/>
+                <img src="./Imagenes/Icons2/Normal_icon_SwSh.png" alt="icon type normal" class="normal"  title="Normal"/>
+                <img src="./Imagenes/Icons2/Poison_icon_SwSh.png" alt="icon type poison" class="poison"  title="Poinson"/>
+                <img src="./Imagenes/Icons2/Psychic_icon_SwSh.png" alt="icon type psychic" class="psychic"  title="Psychic"/>
+                <img src="./Imagenes/Icons2/Rock_icon_SwSh.png" alt="icon type rock" class="rock"  title="Rock"/>
+                <img src="./Imagenes/Icons2/Steel_icon_SwSh.png" alt="icon type steel" class="steel"  title="Steel"/>
+                <img src="./Imagenes/Icons2/Water_icon_SwSh.png" alt="icon type water" class="water"  title="Water"/>
+                <img src="./Imagenes/Icons2/Dark_icon_SwSh.png" alt="icon type dark" class="dark"  title="Dark"/>
+    
+    
+            </div>
+            
+            <ol id="pokedex">
+                
+            </ol>
+        </div>
+    </main>
 </body>
 </html>
