@@ -5,6 +5,18 @@ body {
   color: white;
 }
 
+#searchNumberPokemon {
+  width: 20px;
+}
+
+#delete {
+  width: 20px;
+}
+
+#search {
+  width: 20px;
+}
+
 .container {
   padding: 40px;
   margin: 0 auto;
