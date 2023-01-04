@@ -137,26 +137,35 @@ function createPokemon(pokemon) {
   const card = document.createElement('div');
   card.classList.add('card-container');
 
+  const numberId = document.createElement('p');
+  numberId.classList.add("number-Id")
+  numberId.textContent = pokemon.id;
+
   const spriteContainer = document.createElement('div');
   spriteContainer.classList.add('image-container');
 
   const sprite = document.createElement('img');
-  sprite.src = pokemon.sprites.front_default;
-
+  sprite.src = pokemon.sprites.other.dream_world.front_default;
+  sprite.classList.add("sprite-img")
   spriteContainer.appendChild(sprite);
 
-  const numberId = document.createElement('p');
-  numberId.textContent = pokemon.id;
-
-  const namePokemon = document.createElement('p');
+  const namePokemon = document.createElement('h1');
   namePokemon.classList.add('name');
   namePokemon.textContent = pokemon.name;
 
-  const weightPokemon = document.createElement('p');
-  weightPokemon.textContent= pokemon.weight;
+  const statistics = document.createElement("div");
+  statistics.classList.add("card-stats");
 
+  let height = pokemon.height/10;
+  const heightPokemon = document.createElement("p");
+  heightPokemon.textContent = (height + " m");
+
+  let weight = pokemon.weight/10;
+  const weightPokemon = document.createElement('p');
+  weightPokemon.textContent = (weight + " kg");
 
   const typesPokemon = document.createElement('p');
+
 // Aqui cree un array vacio para meter cada uno de los tipos de cada pokemon
   let arrayTypesPokemon=[];
   for (let i = 0; i < pokemon.types.length; i++) {
@@ -164,13 +173,12 @@ function createPokemon(pokemon) {
     
   }
     typesPokemon.textContent = arrayTypesPokemon;
-    
- 
-  card.appendChild(spriteContainer);
-  
+  statistics.appendChild(heightPokemon);
+  statistics.appendChild(weightPokemon);  
   card.appendChild(numberId);
+  card.appendChild(spriteContainer);
   card.appendChild(namePokemon);
-  card.appendChild(weightPokemon);
+  card.appendChild(statistics);
   card.appendChild(typesPokemon);
   pokemonContainer.appendChild(card); 
 

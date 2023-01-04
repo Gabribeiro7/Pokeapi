@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex Gallery</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style_Gallery.css">
+    <script src="./pokedex.js" defer></script>
+</head>
+<body>
+    
+    <header>
+
+        <nav id="myLinks">
+            
+            <ul class="nav_list">
+                <a href="./index.html"><li>POKEDEX</li></a>
+                <a href="./pokedexGallery.html"><li>GALLERY</li></a>
+                <a href="./pokedexGames.html"><li>GAMES</li></a>
+              </ul>
+        </nav>
+        <span class="logo_Span">
+            <a href="#home" class="logo" title="Logo"> 
+                <img src="./Imagenes/PageIcons/pokemon-logo-8.png" alt="">
+            </a>
+        </span>
+
+    </header>
+    <main>
+        <div class="container">
+            <!-- Aqui creare un form que me valga como buscador, onsubmit sirrve para cuando le de a enter -->
+            <form action="" class="search_Bar">
+              <input type="text" name="pokemon" id="numberPokemons" placeholder="insert numbers Pokemons"  > 
+              <img src="./images/magnifyingglass.png" alt="search" id="searchNumberPokemon"> 
+              
+              <!-- <input type="text" id="inputPokemon" placeholder="pokemon name or id" /> -->
+    
+              <img src="./images/magnifyingglass.png" alt="search" id="search" />  <!-- boton oculto -->
+    
+              <img src="./images/delete.png" alt="delete" id="delete" /> <!-- boton oculto -->
+    
+              <button id="buttonDeleteAll">Delete All</button>
+            </form>
+    
+            <!-- <div id="search-pokemon"></div> -->
+    
+            <ol id="pokedex"></ol>
+          </div>
+    </main>
+    
+</body>
+</html>

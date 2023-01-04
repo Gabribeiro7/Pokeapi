@@ -1,0 +1,24 @@
+#delete{
+    display:none;
+}
+#search{
+    display:none;
+}
+
+#numberPokemons{
+    width: 40%; 
+    font-size: 16px;
+    padding: 12px 20px 12px 20px; 
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+#pokedex {
+    grid-gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    //! Los padding de abajo funcionan mejor en desktop que en moviles
+    // padding-right: 15%;
+    // padding-left: 15%;
+  }
