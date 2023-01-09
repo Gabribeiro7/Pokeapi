@@ -15,7 +15,7 @@ const pokemons = []; //Este es el array donde se guardaran los elementos añadid
 buttonSearch$$.addEventListener('click', insertPokemon);
 
 function insertPokemon() {
-  window.fetch(`${baseURL$$}${pokemonInput$$.value.toLowerCase()}`)
+  fetch(`${baseURL$$}${pokemonInput$$.value.toLowerCase()}`)
   .then(response => {
       if (response.status === 404) {
         alert("The pokemon doesn't exist")
@@ -30,10 +30,8 @@ function insertPokemon() {
     pokemons.push(data); // Cuando le de al boton de insertar me hara un push en el array que cree de pokemon
     
   })
-  
+  pokemonInput$$.value = '';
 }
-
-
 
 
 buttonDelete$$.addEventListener('click', deletePokemon);
